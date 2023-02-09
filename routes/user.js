@@ -6,7 +6,7 @@ const {signupUser, loginUser} = require('../controllers/userController')
 
 
 // Login Route
-router.post('https://triviahhh-backend.onrender.com/login', loginUser)
+router.post('/login', loginUser)
 
 
 // Signup Route
