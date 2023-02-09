@@ -22,6 +22,7 @@ app.use("/scores", scoreRoutes)
 async function connect() {
     try{
         await mongoose.connect(process.env.MONGO_STRING)
+        console.log('connected to MongoDB')
     } catch(err) {
         console.error(err)
     }
